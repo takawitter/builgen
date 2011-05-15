@@ -1,0 +1,20 @@
+package ${packageName};
+
+public class ${className} {
+	public ${className}(){
+		bean = new ${beanClassName}();
+	}
+
+	${foreach properties property}
+	public ${className} ${property.name}(${property.type} value){
+		bean.${property.setterName}(value);
+		return this;
+	}
+	${end}
+
+	public ${beanClassName} build(){
+		return bean;
+	}
+
+	private ${beanClassName} bean;
+}
