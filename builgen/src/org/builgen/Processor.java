@@ -66,7 +66,7 @@ public class Processor implements AnnotationProcessor{
 				AnnotationTypeDeclaration annotationTypeDeclaration =
 					mirror.getAnnotationType().getDeclaration();
 				if (!annotationTypeDeclaration.getQualifiedName().equals(
-						"buildergenerator.GenerateBuilder")) continue;
+						"org.builgen.GenerateBuilder")) continue;
 				String packageName = d.getPackage().getQualifiedName() + ".builder";
 				binding.put("packageName", packageName);
 				String className = d.getSimpleName() + "Builder";

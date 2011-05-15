@@ -3,7 +3,7 @@
 		<mkdir dir="target"/>
 	</target>
 	<target name="dist" depends="init">
-		<jar destfile="target/builgen.jar" basedir="bin">
+		<jar destfile="target/builgen2.jar" basedir="bin">
 			<include name="**/*"/>
 		</jar>
 	</target>

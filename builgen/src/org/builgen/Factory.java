@@ -28,6 +28,6 @@ public class Factory implements AnnotationProcessorFactory{
 
 	private static final Engine templateEngine = new Engine();
 	private static final Collection<String> supportedAnnotations
-		= Collections.unmodifiableCollection(Arrays.asList("*"));
+		= Collections.unmodifiableCollection(Arrays.asList("org.builgen.GenerateBuilder"));
 	private static final Collection<String> supportedOptions = Collections.emptySet();
 }
